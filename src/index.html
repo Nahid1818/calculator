@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="shortcut icon" type="x-icon" href="./img/calculator.jfif" />
+  <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100">
+  <div class="h-[100vh] w-[100vw] grid justify-center items-center">
+    <div
+      class="bg-white shadow-2xl laptop:w-[40vw] laptop:h-[87vh] mobileS:w-[92vw] mobileS:h-[66vh] tablet:w-[70vw] tablet:h-[88vh] grid grid-rows-6 grid-cols-4 gap-4 *:rounded-lg rounded-lg p-4 mobileS:text-2xl laptop:text-5xl text-gray-500">
+      <input id="display" class="col-span-full focus:outline-none border border-gray-200 px-2" type="text">
+      <button class="bg-gray-300" onclick="append('+')">+</button>
+      <button class="bg-gray-300" onclick="append('-')">-</button>
+      <button class="bg-gray-300" onclick="append('*')">x</button>
+      <button class="bg-gray-300" onclick="append('/')">÷</button>
+      <button class="bg-gray-100" onclick="append('7')">7</button>
+      <button class="bg-gray-100" onclick="append('8')">8</button>
+      <button class="bg-gray-100" onclick="append('9')">9</button>
+      <button class="row-span-4 bg-blue-400 hover:bg-blue-700 text-white" onclick="calculate()">=</button>
+      <button class="bg-gray-100" onclick="append('4')">4</button>
+      <button class="bg-gray-100" onclick="append('5')">5</button>
+      <button class="bg-gray-100" onclick="append('6')">6</button>
+      <button class="bg-gray-100" onclick="append('1')">1</button>
+      <button class="bg-gray-100" onclick="append('2')">2</button>
+      <button class="bg-gray-100" onclick="append('3')">3</button>
+      <button class="bg-gray-100" onclick="append('0')">0</button>
+      <button class="bg-gray-100" onclick="append('.')">.</button>
+      <button class="bg-gray-100" onclick="clearDisplay()">C</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
